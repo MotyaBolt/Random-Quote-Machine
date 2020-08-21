@@ -13,7 +13,7 @@ html {
 }
 #quote-box {
     width: 550px;
-    height: 370px;
+    height: 360px;
     background-color: white;
     color: rgb(51, 51, 51);
 }
@@ -48,7 +48,7 @@ transition: all 0.5s ease;
     border: none;
     color: white;
     font-size: 20px;
-    margin-left: 7rem;
+    margin-left: 6rem;
     transition: all 0.5s ease;
     padding: 8px;
 }
@@ -66,7 +66,7 @@ transition: all 0.5s ease;
 #control {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 60px;
 }
 #footer {
@@ -93,8 +93,12 @@ transition: all 0.5s ease;
     margin-right: 20px;
     margin-left: 20px;
 }
+#share-quote {
+    height: 50px;
+    margin-right: 6rem;
+}
 #tweet-quote {
-    margin-right: 7rem;
+    margin-right: 20px;
     height: 50px;
 }
 .header-div {
