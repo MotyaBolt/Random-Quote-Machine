@@ -41,9 +41,9 @@ function getRandom () {
     let randomAuthorNumber = Math.floor(Math.random() * nextAuthors.length);
     randomAuthor = nextAuthors[randomAuthorNumber].author;
     
-$('#quotes').animate({opacity: 0}, 400,
+$('#quotes').animate({opacity: 0}, 500,
     function () {
-        $('#quotes').animate({opacity: 1}, 400
+        $('#quotes').animate({opacity: 1}, 500
         );
         $(quoteText).text(randomQuote);
         $(quoteAuthor).text(randomAuthor);
