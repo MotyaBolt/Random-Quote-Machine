@@ -37,12 +37,17 @@ function getRandom () {
     let nextQuotes = quotes.filter(elem => elem.quote != randomQuote)
     let randomQuoteNumber = Math.floor(Math.random() * nextQuotes.length);
     randomQuote = nextQuotes[randomQuoteNumber].quote;
-    quoteText.innerHTML = randomQuote;
     let nextAuthors = quotes.filter(elem => elem.author != randomAuthor)
     let randomAuthorNumber = Math.floor(Math.random() * nextAuthors.length);
     randomAuthor = nextAuthors[randomAuthorNumber].author;
-    quoteAuthor.innerHTML = randomAuthor;
-}
+    
+$('#quotes').animate({opacity: 0}, 400,
+    function () {
+        $('#quotes').animate({opacity: 1}, 400
+        );
+        $(quoteText).text(randomQuote);
+        $(quoteAuthor).text(randomAuthor);
+    })};
 $(document).ready(function () {
-    $('#new-quote').on("click", getRandom);
+    $('#new-quote').on('click', getRandom)
 })
