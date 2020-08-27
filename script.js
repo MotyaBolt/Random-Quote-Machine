@@ -41,13 +41,10 @@ function getRandom () {
     let randomAuthorNumber = Math.floor(Math.random() * nextAuthors.length);
     randomAuthor = nextAuthors[randomAuthorNumber].author;
     
-$('#quotes').animate({opacity: 0}, 500,
+$('#quotes').animate({opacity: 0}, 400,
     function () {
-        $('#quotes').animate({opacity: 1}, 500
+        $('#quotes').animate({opacity: 1}, 400
         );
         $(quoteText).text(randomQuote);
         $(quoteAuthor).text(randomAuthor);
     })};
-$(document).ready(function () {
-    $('#new-quote').on('click', getRandom)
-})
